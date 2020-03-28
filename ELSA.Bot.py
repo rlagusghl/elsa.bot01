@@ -1,5 +1,6 @@
 import discord
 import openpyxl
+import os
 
 client = discord.Client()
 
@@ -100,10 +101,5 @@ async def on_message(message):
         msg = message.content[26:]
         await client.get_channel(int(channel)).send(msg)
 
-
-client.run("NjkzMDY5MjcxMjQ0MjEwMjA2.Xn9xpA.slRKU249-NIvL3xMIijTOMLM2eQ")
-
-
-
-
-
+access_tiken = os.environ["BOT_TOKEN"]
+client.run(access_tiken)
