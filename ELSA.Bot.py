@@ -1,9 +1,10 @@
 import discord
 import openpyxl
 import random
-import os
+import async
 from discord.ext import commands
 from discord.ext.commands import bot
+import os
 
 client = discord.Client()
 
